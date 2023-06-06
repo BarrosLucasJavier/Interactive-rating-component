@@ -39,20 +39,24 @@ body{
 .rating-component p{
     color: hsl(217, 12%, 63%);
 }
-.rating{
+.ul-rating{
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
 }
-.rating span{
+.rating{
     background-color: hsl(213, 19%, 18%);
     width: 40px;
     height: 40px;
     border-radius: 50%;
     color: hsl(217, 12%, 63%);
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
 .btn{
     padding: 15px 0;
@@ -63,16 +67,21 @@ body{
     font-weight: bold;
     letter-spacing: 2px;
 }
-#rating-container{
-    display: none;
+.btn:hover{
+    background-color: white;
+    color:hsl(25, 97%, 53%) ;
+    cursor: pointer;
 }
 
+
 /* -- Thank You Component -- */
+
 .thank-component{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    display: none;
 }
 .thank-img{
     width: 48%;
@@ -93,3 +102,7 @@ body{
     font-size: 15px;
     text-align: center;
 }
+.rating-selected{
+        background-color: hsl(217, 12%, 63%);
+        color: white ;
+    }
