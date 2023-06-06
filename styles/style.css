@@ -63,3 +63,33 @@ body{
     font-weight: bold;
     letter-spacing: 2px;
 }
+#rating-container{
+    display: none;
+}
+
+/* -- Thank You Component -- */
+.thank-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.thank-img{
+    width: 48%;
+}
+.thank-selected{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 7px 9px;
+    border-radius: 15px;
+}
+.thank-selected p{
+    color: hsl(25, 97%, 53%);
+}
+.thank-title{
+    color: white;
+}
+.thank-text{
+    font-size: 15px;
+    text-align: center;
+}
